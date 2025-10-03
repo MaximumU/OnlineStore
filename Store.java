@@ -23,5 +23,8 @@
 */
 public class Store
 {
-
+  public Store(){
+    int profit;
+    ArrayList<item> items = new ArrayList<item>();
+  }
 }
