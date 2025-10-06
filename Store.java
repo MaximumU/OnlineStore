@@ -24,7 +24,23 @@
 public class Store
 {
   public Store(){
-    int profit;
-    ArrayList<item> items = new ArrayList<item>();
+    private int profit;
+    private ArrayList<ItemForSale> ItemForSale = new ArrayList<ItemForSale>();
+  }
+
+  public void showItems(){
+
+  }
+
+  public void addItem(ItemForSale){
+
+  }
+
+  public void sellItem(ItemForSale){
+    
+  }
+
+  public String getCreator(ItemForSale){
+    
   }
 }
