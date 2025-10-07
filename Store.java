@@ -21,26 +21,40 @@
 
     Where these variables are stored and how to name them is up to you!
 */
+
+//Code written by Liam Walker on October 4th
+//Code establishes a store class and defines items in the store
 public class Store
 {
   public Store(){
     private int profit;
-    private ArrayList<ItemForSale> ItemForSale = new ArrayList<ItemForSale>();
+    private ArrayList<ItemForSale> items = new ArrayList<ItemForSale>();
   }
 
   public void showItems(){
-
+    for(int i = 0; i < items.size(); i++){
+      System.out.print(items.get(i).getName());
+    }
   }
 
-  public void addItem(ItemForSale){
-
+  public void addItem(ItemForSale i){
+    items.add(i);
   }
 
-  public void sellItem(ItemForSale){
-    
+  public void sellItem(ItemForSale s){
+    for(int i = 0; i < items.size(); i++){
+      if(s.equals(items.get(i))){
+        items.remove(i);
+        return;
+      }
+    }
   }
 
   public String getCreator(ItemForSale){
-    
+    for(int i = 0; i < items.size(); i++){
+      if(s.equals(items.get(i))){
+        return items.get(i).getCreator();
+      }
+    }
   }
 }
