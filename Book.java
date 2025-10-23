@@ -9,10 +9,14 @@ public class Book extends itemForSale
     }
     public Book(){}
 
-    public int getPublisher(){
+    //preconditions: book has a publisher
+    //postconditions: returns the books publisher
+    public String getPublisher(){
         return publisher;
     }
 
+    //preconditions: book has an author
+    //postconditions: returns the books author
     public Author getAuthor(){
         return author1;
     }

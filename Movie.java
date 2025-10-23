@@ -6,6 +6,8 @@ public class Movie extends itemForSale
     }
     public Movie(){}
 
+    //preconditions: movie has a duration
+    //postconditions: returns the movies duration
     public int getDuration(){
         return duration;
     }

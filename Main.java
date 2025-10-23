@@ -7,6 +7,11 @@ public class Main
      {
         Store s = new Store();
         Book b = new Book();
-        System.out.println(b instanceof ItemForSale);
+        Movie m = new Movie()
+        s.addItem(b)
+        s.addItem(m);
+        s.removeItem(b);
+
+
      }
 }

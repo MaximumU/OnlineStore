@@ -31,16 +31,22 @@ public class Store
     private ArrayList<ItemForSale> items = new ArrayList<ItemForSale>();
   }
 
+  //preconditions: the items array list is initialized
+  //postconditions: prints out all the items in the items lists names
   public void showItems(){
     for(int i = 0; i < items.size(); i++){
       System.out.print(items.get(i).getName());
     }
   }
 
+  //preconditions: an item for sale is given
+  //postconditions: the item for sale is added to the array list of items 
   public void addItem(ItemForSale i){
     items.add(i);
   }
 
+  //preconditions: the items array list is initialized and item to sell is given
+  //postconditions: the given item is removed from the array list items
   public void sellItem(ItemForSale s){
     for(int i = 0; i < items.size(); i++){
       if(s.equals(items.get(i))){
@@ -50,7 +56,9 @@ public class Store
     }
   }
 
-  public String getCreator(ItemForSale){
+  //preconditions: an item for sale is given and it has a creator the item is in the list items
+  //postconditions: the items creator is returned
+  public String getCreator(ItemForSale s){
     for(int i = 0; i < items.size(); i++){
       if(s.equals(items.get(i))){
         return items.get(i).getCreator();
